@@ -1,0 +1,32 @@
+.recommended{
+    flex-basis: 30%;
+}
+.side-vedio{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: inherit;
+    
+}
+.side-vedio img{
+    width: 50%;
+    flex-basis: 49%;
+}
+.vid-info{
+    flex-basis: 49%;
+
+}
+.vid-info h4{
+    font-size: 1.5rem;
+    margin-top: 13px;
+    text-align: left;
+    
+}
+.vid-info p{
+    font-size: 1.5rem;
+    margin-top: 7px;
+    font-weight: 600;
+    text-align: left;
+}
+

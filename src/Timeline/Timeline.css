@@ -1,0 +1,42 @@
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+    
+}
+.card{
+    text-decoration: none;
+}
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+  .card h2{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: left;
+    color: #0a0a0aef;
+    
+    
+    
+}
+.card h3{
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #555;
+    text-align: left;
+    margin: 4px 0;
+    text-align: left;
+}
+.card p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+
+
+

@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    padding: 10px 2% ;
+    justify-content: space-between ;
+    background-color:  #ffffff;
+    position: sticky;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+   top: 0;
+   z-index: 10;
+   height: 100px;
+
+}
+
+
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+img{
+    cursor: pointer;
+}
+
+.nav-left  .logo{
+    width: 200px;
+    height: auto;
+}
+.nav-left .menu-icon{
+    width:40px;
+    margin-right: 25px;
+    margin-bottom: 80px;
+
+}
+.nav-middle{
+    border-radius: 40px;
+}
+.nav-middle .search-box{
+    border:2px solid #ccc ;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    
+     
+}
+ .search-box input{
+width: 600px;
+background: transparent;
+outline: 0;
+border: 0;
+font-size: 1.5rem;
+text-align:left;
+}
+
+.nav-middle .search-box .search-icon{
+ margin-top: 20px;
+ left: 25px;   
+ width: 29px;
+ 
+}
+.mic-icon img{
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    gap: 4rem;
+}
+.nav-right img{
+    width: 50px;
+    margin-right: 25px;
+
+}
+.nav-right .user-icon{
+    border-radius: 50%;
+    width: 60px;
+}
