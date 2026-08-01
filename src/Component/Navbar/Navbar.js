@@ -10,31 +10,34 @@ import profile_icon from '../../assets/user_profile.jpg'
 import mics_icon from '../../assets/mics.png'
 import { Link } from 'react-router-dom'
 
-const Navbar = ({setSidebar}) => {
+const Navbar = ({ setSidebar }) => {
   return (
-    <nav  className='flex-div'>
-      <div className='nav-left flex -div'> 
-        <img className='menu-icon' onClick={()=>setSidebar(prev=>prev===false?true:false)}   src={menu_icon} alt=''/>
-       <Link to='/'> <img  className='logo' src={logo_icon} alt='' /></Link>
-
+    <nav className='flex-div'>
+      <div className='nav-left flex-div'>
+        <img className='menu-icon' onClick={() => setSidebar(prev => !prev)} src={menu_icon} alt='Menu' />
+        <Link to='/' className='logo-link'>
+          <img className='logo' src={logo_icon} alt='YouTube' />
+        </Link>
       </div>
-      <div className=' nav-middle flex-div'>
-        <div className='search-box'>
-      <input type='text' placeholder='Search'/>
-       <img  className='search-icon'  src={serach_icon} alt=''/>
-       </div>
-       <div className='mic-icon'>
-        <img src={mics_icon} alt=''/>
-       </div>
-            </div>
-            <div className='nav-right  flex-div'>
-              <img src={upload_icon} alt=''/>
-              <img src={more_icon}alt=''/>
-              <img src= {notification_icon} alt=''/>
-              <img  className='user-icon' src={profile_icon} alt=''/>
 
+      <div className='nav-middle flex-div'>
+        <div className='search-box flex-div'>
+          <input type='text' placeholder='Search' />
+          <button type='button' className='search-btn'>
+            <img className='search-icon' src={serach_icon} alt='Search' />
+          </button>
+        </div>
+        <div className='mic-icon flex-div'>
+          <img src={mics_icon} alt='Mic' />
+        </div>
+      </div>
 
-            </div>
+      <div className='nav-right flex-div'>
+        <img src={upload_icon} alt='Upload' className='nav-icon' />
+        <img src={more_icon} alt='More' className='nav-icon' />
+        <img src={notification_icon} alt='Notifications' className='nav-icon' />
+        <img className='user-icon' src={profile_icon} alt='Profile' />
+      </div>
     </nav>
   )
 }
