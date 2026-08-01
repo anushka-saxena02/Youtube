@@ -35,5 +35,27 @@
   to {
     transform: rotate(360deg);
   }
-}        
+}
+/* Container ko grid banao jisse responsive cards banein */
+.feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* 240px se card chote ho jayenge */
+  gap: 15px;
+  padding: 15px;
+}
+
+/* Thumbnail aur Card Size fix karne ke liye */
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.card h2 {
+  font-size: 14px; /* Title font size chota karne ke liye */
+  line-height: 1.2;
+}
+
+.card p {
+  font-size: 12px; /* Text font size */
+}
 
