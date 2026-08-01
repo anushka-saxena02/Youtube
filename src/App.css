@@ -23,7 +23,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
@@ -57,4 +56,8 @@
 
 .card p {
   font-size: 12px; /* Text font size */
+}
+.App {
+  min-height: 100vh;
+  background-color: #f9f9f9;
 }
