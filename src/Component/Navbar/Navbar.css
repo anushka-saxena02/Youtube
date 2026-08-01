@@ -1,77 +1,55 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 56px;
+  border-bottom: 1px solid #e5e5e5;
 }
-nav{
-    padding: 10px 2% ;
-    justify-content: space-between ;
-    background-color:  #ffffff;
-    position: sticky;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-   top: 0;
-   z-index: 10;
-   height: 100px;
-
+.flex-div {
+  display: flex;
+  align-items: center;
 }
-
-
-.flex-div{
-    display: flex;
-    align-items: center;
+.nav-left {
+    gap:16px
+    }
+.mic-icon img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
 }
-img{
-    cursor: pointer;
+.nav-right {
+  gap: 16px;
 }
-
-.nav-left  .logo{
-    width: 200px;
-    height: auto;
+.nav-icon {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  object-fit: contain;
 }
-.nav-left .menu-icon{
-    width:40px;
-    margin-right: 25px;
-    margin-bottom: 80px;
-
+.user-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
 }
-.nav-middle{
-    border-radius: 40px;
-}
-.nav-middle .search-box{
-    border:2px solid #ccc ;
-    margin-right: 15px;
-    padding: 8px 12px;
-    border-radius: 15px;
-    
-     
-}
- .search-box input{
-width: 600px;
-background: transparent;
-outline: 0;
-border: 0;
-font-size: 1.5rem;
-text-align:left;
-}
-
-.nav-middle .search-box .search-icon{
- margin-top: 20px;
- left: 25px;   
- width: 29px;
- 
-}
-.mic-icon img{
-    width: 60px;
-    height: auto;
-    border-radius: 50%;
-    gap: 4rem;
-}
-.nav-right img{
-    width: 50px;
-    margin-right: 25px;
-
-}
-.nav-right .user-icon{
-    border-radius: 50%;
-    width: 60px;
+@media (max-width: 650px) {
+  .nav-middle .search-box input {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+  .mic-icon {
+    display: none;
+  }
+  .nav-right .nav-icon {
+    display: none;
+  }
+  .logo {
+    height: 18px;
+  }
 }
